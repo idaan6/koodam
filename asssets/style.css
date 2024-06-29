@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(266, 266, 266, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 14px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: -100%;
+    background-color: #000000;
+    transition: left 0.3s ease;
+}
+
+.navbar a:hover::before {
+    left: 0;
+}
+
+.navbar a:hover {
+    color: #000000;
+}
+
+
+.content {
+    padding: 100px 20px;
+    text-align: center;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Warna putih transparan */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar {
+    background-color: transparent; /* Menghilangkan latar belakang */
+    box-shadow: none; /* Menghilangkan bayangan */
+}
+
+.navbar a {
+    color: #ffffff; /* Mengubah warna font menjadi putih */
+    font-weight: bold; /* Menebalkan font */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Menambahkan efek bayangan */
+}
+
+.navbar a:hover {
+    color: #0117da; /* Warna lebih cerah saat di-hover */
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.navbar a:hover {
+    transform: translateY(-5px); /* Teks bergerak ke atas */
+    color: #0117da; /* Ubah warna teks saat di-hover */
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/background.jpg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    filter: blur(5px); /* Adjust the blur radius as needed */
+    z-index: -1; /* Ensure it stays behind other content */
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(249, 251, 252);
+}
+
+.header{
+    text-align: center;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+#btn-search{
+    padding: 10px 20px;
+    margin: 10px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 30px;
+}
+
+#btn-search:hover{
+    background-color: #000;
+    color: white;
+}
+
+.hasil-khodam{
+    margin: 10px;
+    padding: 2px 10px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-shadow: rgb(5, 5, 5) 2px 2px;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: flex;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: flex;
+        width: 100%;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+}
+
